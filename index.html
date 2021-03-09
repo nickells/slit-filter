@@ -24,22 +24,25 @@
 
     <link rel="icon" sizes="192x192" href="../../../images/webrtc-icon-192x192.png">
     <link href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="main.css">
+    <!-- <link rel="stylesheet" href="main.css"> -->
 
 </head>
 
 <body>
 
-<div id="container">
 
     <video playsinline autoplay></video>
     <!-- <button>Take snapshot</button> -->
     <pre id="output" formatting="json"></pre>
-    <canvas></canvas>
-    <button id="go">Go</button>
-    <button id="reset">Reset</button>
+    <div>
+        <button id="go">Go</button>
+        <button id="reset">Reset</button>
+    </div>
+    <div id="canvasContainer">
+        <canvas id="main"></canvas>
+        <canvas id="overlay"></canvas>
+    </div>
 
-</div>
 
 <script src="https://webrtc.github.io/adapter/adapter-latest.js"></script>
 <script src="index.js" async></script>
